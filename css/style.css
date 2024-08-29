@@ -440,6 +440,7 @@ footer div img{
 
 .grid-galeria{
     width: 100%;
+    height: 890px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -447,7 +448,7 @@ footer div img{
 
 .galeria-fotos{
     width: 80%;
-    height: calc(100vh - 120px);
+    height: 890px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 270px 270px 270px;
@@ -700,6 +701,17 @@ footer div img{
         width: 700px;
         height: 450px;
     }
+    .main-galeria{
+        height: 1520px;
+    }
+    .galeria-fotos{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 270px 270px 270px 270px 270px;
+        gap: 20px;
+        justify-items: center;
+    }
 }
 
 @media screen and (max-width:1575px){
@@ -780,6 +792,20 @@ footer div img{
     }
 }
 
+@media screen and (max-width:1200px){
+    .galeria-fotos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 270px 270px 270px 270px 270px;
+        align-items: center;
+        gap: 10px;
+    }
+    .grid-item{
+        width: 350px;
+        height: 220px;
+    }
+}
+
 @media screen and (max-width:1060px) {
     .hero h2{
         font-size: 30px;
@@ -822,6 +848,19 @@ footer div img{
     .proyecto-parrafo-2 div P{
         padding: 5px;
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width:990px){
+    header{
+        height: 260px;
+        background-color: #272727;
+    }   
+    .hero{
+        height: calc(100vh - 260px);
+    }
+    .galeria-fotos{
+        width: 90%;
     }
 }
 
@@ -909,6 +948,20 @@ footer div img{
     }
     .proyecto-parrafo-2 div p{
         height: 100px;
+    }
+    .main-galeria{
+        height: 2150px;
+    }
+    .galeria-fotos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 220px 220px 220px 220px 220px 220px 220px 220px 220px;
+        align-items: center;
+        gap: 10px;
+    }
+    .grid-item{
+        width: 350px;
+        height: 220px;
     }
 }
 
@@ -1045,6 +1098,21 @@ footer div img{
     .proyecto-parrafo-2 img{
         width: 350px;
         height: 220px;
+    }
+    .main-galeria{
+        height: 1870px;
+    }
+    .galeria-fotos{
+        display: grid;
+        grid-template-columns: repeat(1, 320px);
+        grid-template-rows: 190px 190px 190px 190px 190px 190px 190px 190px 190px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .grid-item{
+        width: 320px;
+        height: 190px;
     }
 }
 
