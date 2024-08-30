@@ -405,7 +405,7 @@ footer div img{
     margin-top: 10px;
 }
 .unidades-main section h1{
-    font-size: 30px;
+    font-size: 32px;
     text-align: center;
     text-decoration: underline;
 }
@@ -428,11 +428,15 @@ footer div img{
 }
 
 .unidades-imagenes div h3{
+    font-size: 25px;
     text-decoration: underline;
+    color: rgba(255, 255, 255, 0.815);
 }
 
 .unidades-imagenes div p{
+    width: 90%;
     text-align: justify;
+    color: rgba(255, 255, 255, 0.815);
 }
 
 .unidades-imagenes div img{
@@ -719,6 +723,18 @@ footer div img{
         width: 700px;
         height: 450px;
     }
+    .unidades-imagenes div{
+        width: 30%;
+    }
+    .unidades-imagenes div img{
+        width: 60%
+    };
+    .unidades-imagenes div h3{
+        font-size: 25px;
+    }
+    .unidades-imagenes div p{
+        font-size: 14px;
+    }
     .main-galeria{
         height: 1520px;
     }
@@ -808,6 +824,23 @@ footer div img{
         width: 525px;
         height: 337px;
     }
+    .unidades-main section h1{
+        font-size: 28px;
+    }
+    .unidades-imagenes div{
+        width: 400px;
+        height: 650px;
+    }
+    .unidades-imagenes div img{
+        width: 70%;
+        margin-bottom: 5px;
+    }
+    .unidades-imagenes div h3{
+        font-size: 20px;    
+    }
+    .unidades-imagenes div p{
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width:1200px){
@@ -867,6 +900,12 @@ footer div img{
         padding: 5px;
         font-size: 15px;
     }
+    .unidades-imagenes div{
+        height: 650px;
+    }
+    .unidades-imagenes div img{
+        margin-bottom: 5px;
+    }
     .main-formulario{
         height: 800px;
     }
@@ -899,6 +938,27 @@ footer div img{
     }
     .galeria-fotos{
         width: 90%;
+    }
+    .unidades-main{
+        height: 2100px;
+    }
+    .unidades-imagenes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .unidades-imagenes div{
+        width: 50%;
+    }
+    .unidades-imagenes div h3{
+        font-size: 22px;
+    }
+    .unidades-imagenes div img{
+        width: 60%;
+    }
+    .unidades-imagenes div p{
+        font-size: 14px;
     }
 }
 
@@ -1001,6 +1061,9 @@ footer div img{
         width: 350px;
         height: 220px;
     }
+    .unidades-imagenes div{
+        width: 60%;
+    }
 }
 
 @media screen and (max-width:640px) {
@@ -1028,6 +1091,9 @@ footer div img{
     }
     .proyecto-parrafo-2 div P{
         font-size: 13px;
+    }
+    .unidades-imagenes div{
+        width: 65%;
     }
 }
 
@@ -1102,6 +1168,9 @@ footer div img{
     }
     .formulario-redes{
         width: 50%;
+    }
+    .unidades-imagenes div{
+        width: 75%;
     }
 }
 
@@ -1182,6 +1251,18 @@ footer div img{
     .formulario-redes{
         width: 70%;
         height: 60px;
+    }
+    .unidades-main section h1{
+        font-size: 24px;
+    }
+    .unidades-imagenes div{
+        width: 80%;
+    }
+    .unidades-imagenes div h3{
+        font-size: 19px;
+    }
+    .unidades-imagenes div p{
+        font-size: 13px;
     }
 }
 
@@ -1273,5 +1354,14 @@ footer div img{
     .proyecto-parrafo-2 img{
         width: 315px;
         height: 220px;
+    }
+    .unidades-imagenes div{
+        width: 90%;
+    }
+    .unidades-imagenes div img{
+        width: 85%;
+    }
+    .unidades-imagenes div p{
+        width: 100%;
     }
 }
