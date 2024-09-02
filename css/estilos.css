@@ -1,0 +1,1030 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.boton {
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  padding: 7px; }
+
+/*! --- RESET ---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans"; }
+
+/*! --- BOOTSTRAP ---*/
+.menu-color {
+  height: 120px;
+  background-color: #272727; }
+
+/*! ----- INDEX ----- */
+header nav div img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.747);
+  border-radius: 10px; }
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 120px);
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/vista-por-fuera.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hero h1 {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+  .hero p {
+    width: 50%;
+    font-size: 22px;
+    text-align: justify;
+    color: white;
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5));
+    padding: 10px;
+    border: 2px solid white;
+    display: inline-block; }
+
+.conocelo {
+  width: 100%;
+  height: 600px;
+  background-color: #d3c4b2f3;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center; }
+
+.conocelo-parrafo {
+  width: 100%;
+  height: 400px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .conocelo-parrafo h2 {
+    width: 100%;
+    padding: 5px;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    color: black; }
+  .conocelo-parrafo p {
+    width: 100%;
+    margin: 2px;
+    font-size: 19px;
+    text-align: justify;
+    color: black; }
+  .conocelo-parrafo a {
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.abanico {
+  width: 100%;
+  height: 100%;
+  margin-right: 20px;
+  border: 2px solid black;
+  display: flex; }
+  .abanico img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    border: 1px solid black; }
+    .abanico img :hover {
+      width: 100%;
+      cursor: default;
+      width: 300px;
+      opacity: 1;
+      filter: contrast(120%);
+      border: 2px solid black; }
+
+.propuestas h2 {
+  width: 100%;
+  font-size: 30px;
+  font-style: italic;
+  margin: 0px;
+  color: black;
+  background-color: #7c7a76bd;
+  display: flex;
+  justify-content: center; }
+
+.fotos-propuestas {
+  width: 100%;
+  padding: 5px;
+  background-color: #7c7a76bd;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .fotos-propuestas div {
+    width: 350px;
+    height: 400px;
+    background-color: #d3c4b2;
+    border: 3px solid black;
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block; }
+    .fotos-propuestas div h3 {
+      width: 100%;
+      font-size: 22px;
+      text-align: center;
+      padding: 7px;
+      margin-bottom: 2px; }
+    .fotos-propuestas div img {
+      width: 100%;
+      height: 80%;
+      border-radius: 20px 20px 0 0;
+      border-bottom: 3px solid black;
+      display: flex;
+      justify-content: center; }
+
+.boton {
+  width: 90px;
+  height: 35px;
+  background-color: #272727; }
+
+.el-barrio {
+  width: 100%;
+  height: 600px;
+  background-color: #d3c4b2f3;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .el-barrio .parrafo-barrio {
+    width: 100%;
+    text-align: center; }
+    .el-barrio .parrafo-barrio h2 {
+      width: 100%;
+      font-size: 30px;
+      text-align: center; }
+    .el-barrio .parrafo-barrio p {
+      width: 70%;
+      height: 70px;
+      font-size: 19px;
+      text-align: justify;
+      display: inline-block; }
+  .el-barrio .mapa {
+    width: 100%; }
+    .el-barrio .mapa iframe {
+      width: 100%; }
+
+.whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 50px; }
+  .whatsapp a img {
+    width: 60px; }
+
+/*! ----- PROYECTO ----- */
+.proyecto-parrafo-1 {
+  width: 100%;
+  height: 640px;
+  background-color: #d3c4b2f3;
+  display: flex;
+  padding: 20px; }
+  .proyecto-parrafo-1 div {
+    width: 50%;
+    background: linear-gradient(rgba(5, 7, 12, 0.336), rgba(5, 7, 12, 0.5));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .proyecto-parrafo-1 div h1 {
+      width: 100%;
+      font-size: 30px;
+      font-style: italic;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .proyecto-parrafo-1 p {
+    width: 80%;
+    height: 110px;
+    margin: 5px;
+    font-size: 17px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .proyecto-parrafo-1 img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid black;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3); }
+
+.proyecto-parrafo-2 {
+  width: 100%;
+  height: 640px;
+  background-color: #d3c4b2f3;
+  padding: 15px;
+  display: flex;
+  flex-direction: row-reverse; }
+  .proyecto-parrafo-2 div {
+    background: linear-gradient(rgba(5, 7, 12, 0.336), rgba(5, 7, 12, 0.5));
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .proyecto-parrafo-2 div p {
+      width: 80%;
+      height: 90px;
+      font-size: 17px;
+      text-align: justify;
+      padding: 10px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; }
+  .proyecto-parrafo-2 img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid black;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3); }
+
+/*! ----- UNIDADES ----- */
+.unidades-main {
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-color: #d3c4b2f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .unidades-main section {
+    width: 100%;
+    margin-top: 10px; }
+    .unidades-main section h1 {
+      font-size: 32px;
+      text-align: center;
+      text-decoration: underline; }
+  .unidades-main .unidades-imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .unidades-main .unidades-imagenes div {
+      width: 100%;
+      margin: 15px;
+      padding: 25px;
+      border-radius: 30px;
+      background: linear-gradient(rgba(5, 7, 12, 0.336), rgba(5, 7, 12, 0.5));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .unidades-main .unidades-imagenes div h3 {
+        font-size: 25px;
+        text-decoration: underline;
+        color: rgba(255, 255, 255, 0.815); }
+      .unidades-main .unidades-imagenes div p {
+        width: 90%;
+        text-align: justify;
+        color: rgba(255, 255, 255, 0.815); }
+      .unidades-main .unidades-imagenes div img {
+        margin-bottom: 15px;
+        border: solid 3px black;
+        box-shadow: 14px 14px 20px 0 rgba(10, 10, 10, 0.1); }
+
+/*! ----- GALERIA ----- */
+.main-galeria {
+  width: 100%;
+  height: 950px;
+  background-color: #d3c4b2f3; }
+  .main-galeria .galeria-titulo {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-galeria .galeria-titulo h1 {
+      font-size: 25px;
+      font-style: italic; }
+  .main-galeria .grid-galeria {
+    width: 100%;
+    height: 890px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-galeria .grid-galeria .galeria-fotos {
+      width: 80%;
+      height: 890px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 270px 270px 270px;
+      gap: 20px; }
+      .main-galeria .grid-galeria .galeria-fotos div {
+        display: flex;
+        justify-content: center;
+        position: relative; }
+        .main-galeria .grid-galeria .galeria-fotos div img {
+          width: 100%;
+          height: 100%;
+          border: 3px solid black;
+          object-fit: cover; }
+        .main-galeria .grid-galeria .galeria-fotos div h3 {
+          width: 100%;
+          font-size: 19px;
+          color: white;
+          background-color: #00000079;
+          padding: 7px;
+          position: absolute; }
+
+/*! ----- CONTACTO ----- */
+.main-formulario {
+  width: 100%;
+  height: calc(100vh - 240px);
+  background: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.404)), url(../img/vista-superior.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .main-formulario .formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 20px;
+    gap: 10px;
+    width: 1000px; }
+    .main-formulario .formulario .formulario-conjunto {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 50px; }
+      .main-formulario .formulario .formulario-conjunto h1 {
+        text-align: left;
+        font-size: 30px; }
+      .main-formulario .formulario .formulario-conjunto .formulario-info {
+        display: flex;
+        flex-direction: column;
+        gap: 25px; }
+        .main-formulario .formulario .formulario-conjunto .formulario-info p {
+          font-size: 1rem; }
+          .main-formulario .formulario .formulario-conjunto .formulario-info p img {
+            width: 30px;
+            padding: 2px;
+            margin-right: 10px;
+            font-size: 25px;
+            border-radius: 5px;
+            background: linear-gradient(rgba(255, 255, 255, 0.349), rgba(237, 238, 238, 0.5)); }
+      .main-formulario .formulario .formulario-conjunto .formulario-redes {
+        width: 35%;
+        height: 50px;
+        border-radius: 5px;
+        background: linear-gradient(rgba(255, 255, 255, 0.349), rgba(237, 238, 238, 0.5));
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        .main-formulario .formulario .formulario-conjunto .formulario-redes a {
+          text-decoration: none;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          transition: .1s; }
+          .main-formulario .formulario .formulario-conjunto .formulario-redes a img {
+            width: 40px; }
+      .main-formulario .formulario .formulario-conjunto .formulario-casillas {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px; }
+        .main-formulario .formulario .formulario-conjunto .formulario-casillas button {
+          width: 100%;
+          padding: 10px;
+          outline: none;
+          background: #272727de;
+          color: white;
+          border: none;
+          transition: .1s;
+          cursor: pointer;
+          font-size: 1rem; }
+        .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla {
+          position: relative; }
+          .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla input {
+            width: 100%;
+            height: 40px;
+            padding: 0 10px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.384);
+            border: 3px solid transparent;
+            letter-spacing: 1px;
+            transition: .3s;
+            color: black; }
+            .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla inputplaceholder {
+              color: black; }
+            .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla inputfocus {
+              border-bottom: 3px solid white; }
+              .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla inputfocuspalceholder {
+                color: transparent; }
+          .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla textarea {
+            width: 100%;
+            height: 130px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.384);
+            border: 3px solid transparent;
+            letter-spacing: 1px;
+            outline: none;
+            transition: .3s;
+            color: black;
+            letter-spacing: 1.5px; }
+            .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla textareaplaceholder {
+              color: black; }
+            .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla textareafocus {
+              border-bottom: 3px solid white; }
+              .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla textareafocusplaceholder {
+                color: transparent; }
+          .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla img {
+            width: 25px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            color: rgba(255, 255, 255, 0.336);
+            transition: .3s; }
+
+footer {
+  width: 100%;
+  height: 120px;
+  background-color: #272727; }
+  footer h2 {
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
+    color: white;
+    padding: 10px; }
+  footer div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    footer div a {
+      height: 50px; }
+    footer div img {
+      width: 50px;
+      display: inline-block;
+      margin: 10px; }
+
+@media screen and (max-width: 1654px) {
+  .conocelo-parrafo a {
+    font-size: 15px; }
+  .proyecto-parrafo-1 {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .proyecto-parrafo-1 div {
+      width: 60%;
+      height: 300px;
+      margin-bottom: 10px; }
+      .proyecto-parrafo-1 div p {
+        font-size: 15px; }
+    .proyecto-parrafo-1 img {
+      width: 700px;
+      height: 450px; }
+  .proyecto-parrafo-2 {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .proyecto-parrafo-2 div {
+      width: 60%;
+      height: 300px;
+      margin-bottom: 10px; }
+      .proyecto-parrafo-2 div p {
+        font-size: 15px; }
+    .proyecto-parrafo-2 img {
+      width: 700px;
+      height: 450px; }
+  .unidades-main .unidades-imagenes div {
+    width: 30%; }
+    .unidades-main .unidades-imagenes div img {
+      width: 60%; }
+    .unidades-main .unidades-imagenes div h3 {
+      font-size: 25px; }
+    .unidades-main .unidades-imagenes div p {
+      font-size: 14px; }
+  .main-galeria {
+    height: 1520px; }
+    .main-galeria .grid-galeria .galeria-fotos {
+      width: 70%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 270px 270px 270px 270px 270px;
+      gap: 20px;
+      justify-items: center; } }
+
+@media screen and (max-width: 1575px) {
+  .conocelo-parrafo a {
+    width: 80px;
+    height: 30px;
+    font-size: 13px; } }
+
+@media screen and (max-width: 1610px) {
+  .hero h1 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 1450px) {
+  .hero p {
+    width: 90%; }
+  .el-barrio {
+    display: flex;
+    flex-direction: column; }
+    .el-barrio .parrafo-barrio p {
+      width: 60%;
+      height: 80px;
+      font-size: 19px;
+      margin-bottom: 10px; }
+    .el-barrio .mapa {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .el-barrio .mapa iframe {
+        width: 350px;
+        height: 300px; } }
+
+@media screen and (max-width: 1355px) {
+  .abanico {
+    display: none; }
+  .conocelo {
+    width: 100%;
+    height: 420px; }
+    .conocelo .conocelo-parrafo p {
+      width: 80%; }
+  .proyecto-parrafo-1 {
+    height: 700px; }
+    .proyecto-parrafo-1 div {
+      width: 70%;
+      height: 260px;
+      margin-bottom: 10px; }
+      .proyecto-parrafo-1 div p {
+        font-size: 15px; }
+    .proyecto-parrafo-1 img {
+      width: 525px;
+      height: 337px; }
+  .proyecto-parrafo-2 {
+    height: 700px; }
+    .proyecto-parrafo-2 div {
+      width: 70%;
+      height: 260px;
+      margin-bottom: 10px; }
+      .proyecto-parrafo-2 div p {
+        font-size: 15px; }
+    .proyecto-parrafo-2 img {
+      width: 525px;
+      height: 337px; }
+  .unidades-main section h1 {
+    font-size: 28px; }
+  .unidades-main .unidades-imagenes div {
+    width: 400px;
+    height: 650px; }
+    .unidades-main .unidades-imagenes div img {
+      width: 70%;
+      margin-bottom: 5px; }
+    .unidades-main .unidades-imagenes div h3 {
+      font-size: 20px; }
+    .unidades-main .unidades-imagenes div p {
+      font-size: 13px; } }
+
+@media screen and (max-width: 1200px) {
+  .grid-galeria .galeria-fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 270px 270px 270px 270px 270px;
+    align-items: center;
+    gap: 10px; }
+    .grid-galeria .galeria-fotos div {
+      width: 350px;
+      height: 220px; } }
+
+@media screen and (max-width: 1112px) {
+  .unidades-main .unidades-imagenes div h3 {
+    font-size: 22px; } }
+
+@media screen and (max-width: 1060px) {
+  .hero h1 {
+    font-size: 30px; }
+  .hero p {
+    width: 90%;
+    font-size: 18px; }
+  .mapa {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .mapa iframe {
+      width: 350px;
+      height: 250px;
+      padding: 5px; }
+  .proyecto-parrafo-1 div {
+    width: 80%;
+    height: 260px;
+    margin-bottom: 10px; }
+    .proyecto-parrafo-1 div h1 {
+      font-size: 25px; }
+    .proyecto-parrafo-1 div p {
+      font-size: 15px; }
+  .proyecto-parrafo-2 div {
+    width: 80%;
+    height: 280px;
+    margin-bottom: 10px; }
+    .proyecto-parrafo-2 div h2 {
+      font-size: 25px; }
+    .proyecto-parrafo-2 div p {
+      padding: 5px;
+      font-size: 15px; }
+  .unidades-main .unidades-imagenes div {
+    height: 650px; }
+    .unidades-main .unidades-imagenes div h3 {
+      font-size: 20px; }
+    .unidades-main .unidades-imagenes div p {
+      width: 100%; }
+    .unidades-main .unidades-imagenes div img {
+      margin-bottom: 5px; }
+  .main-formulario {
+    height: 800px; }
+    .main-formulario .formulario {
+      width: 70%;
+      height: 600px;
+      display: flex;
+      flex-direction: column; }
+      .main-formulario .formulario .formulario-conjunto {
+        height: 300px;
+        align-items: center;
+        gap: 10px; }
+        .main-formulario .formulario .formulario-conjunto h1 {
+          text-align: center; }
+        .main-formulario .formulario .formulario-conjunto .formulario-info {
+          gap: 5px; } }
+
+@media screen and (max-width: 990px) {
+  header {
+    height: 255px;
+    background-color: #272727; }
+  .hero {
+    height: calc(100vh - 255px); }
+  .el-barrio .parrafo-barrio h2 {
+    font-size: 25px; }
+  .el-barrio .parrafo-barrio p {
+    width: 70%; }
+  .main-galeria .grid-galeria {
+    width: 100%; }
+    .main-galeria .grid-galeria .galeria-fotos {
+      width: 90%; }
+  .unidades-main {
+    height: 2100px; }
+    .unidades-main .unidades-imagenes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .unidades-main .unidades-imagenes div {
+        width: 50%; }
+        .unidades-main .unidades-imagenes div h3 {
+          font-size: 22px; }
+        .unidades-main .unidades-imagenes div img {
+          width: 60%; }
+        .unidades-main .unidades-imagenes div p {
+          width: 90%;
+          font-size: 14px; } }
+
+@media screen and (max-width: 900px) {
+  .conocelo-parrafo p {
+    font-size: 17px; }
+  .el-barrio .parrafo-barrio p {
+    width: 75%;
+    height: 80px;
+    font-size: 17px;
+    margin-bottom: 10px; }
+  .proyecto-parrafo-1 div {
+    width: 85%;
+    height: 260px;
+    margin-bottom: 10px; }
+    .proyecto-parrafo-1 div h1 {
+      font-size: 20px; }
+    .proyecto-parrafo-1 div p {
+      font-size: 13px; }
+    .proyecto-parrafo-1 div img {
+      width: 420px;
+      height: 270px; }
+  .proyecto-parrafo-2 div {
+    width: 85%;
+    height: 260px;
+    margin-bottom: 10px; }
+    .proyecto-parrafo-2 div h2 {
+      font-size: 20px; }
+    .proyecto-parrafo-2 div p {
+      font-size: 13px; }
+    .proyecto-parrafo-2 div img {
+      width: 420px;
+      height: 270px; }
+  footer h2 {
+    font-size: 20px; }
+  footer div img {
+    width: 40px; } }
+
+@media screen and (max-width: 780px) {
+  .hero h1 {
+    font-size: 25px; }
+  .hero p {
+    width: 90%;
+    font-size: 15px; }
+  .conocelo-parrafo h2 {
+    font-size: 20px; }
+  .conocelo-parrafo p {
+    width: 90%;
+    font-size: 15px; }
+  .el-barrio .parrafo-barrio h2 {
+    font-size: 20px; }
+  .el-barrio .parrafo-barrio p {
+    width: 75%;
+    height: 80px;
+    font-size: 15px;
+    margin-bottom: 10px; }
+  .proyecto-parrafo-1 {
+    height: 650px; }
+  .proyecto-parrafo-2 {
+    height: 600px; }
+    .proyecto-parrafo-2 div {
+      height: 280px; }
+      .proyecto-parrafo-2 div p {
+        height: 100px; }
+  .main-galeria {
+    height: 2150px; }
+    .main-galeria .grid-galeria .galeria-fotos {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 220px 220px 220px 220px 220px 220px 220px 220px 220px;
+      align-items: center;
+      gap: 10px; }
+      .main-galeria .grid-galeria .galeria-fotos div {
+        width: 350px;
+        height: 220px; }
+  .unidades-main .unidades-imagenes div {
+    width: 60%; } }
+
+@media screen and (max-width: 687px) {
+  .proyecto-parrafo-2 div p {
+    width: 90%; } }
+
+@media screen and (max-width: 640px) {
+  .hero h1 {
+    font-size: 22px; }
+  .hero p {
+    width: 90%;
+    font-size: 12px; }
+  .conocelo-parrafo p {
+    font-size: 13px; }
+  .proyecto-parrafo-1 div {
+    width: 90%;
+    height: 270px;
+    margin-bottom: 10px; }
+    .proyecto-parrafo-1 div p {
+      font-size: 13px; }
+  .proyecto-parrafo-2 div {
+    width: 90%;
+    margin-bottom: 10px; }
+    .proyecto-parrafo-2 div p {
+      font-size: 13px; }
+  .unidades-main .unidades-imagenes div {
+    width: 65%; } }
+
+@media screen and (max-width: 582px) {
+  .proyecto-parrafo-2 div p {
+    font-size: 12px; } }
+
+@media screen and (max-width: 570px) {
+  .hero h1 {
+    font-size: 18px; }
+  .hero p {
+    width: 90%;
+    font-size: 11px; }
+  .conocelo-parrafo p {
+    width: 100%; }
+  .el-barrio .parrafo-barrio p {
+    width: 90%;
+    height: 80px;
+    font-size: 13px;
+    margin-bottom: 10px; }
+  .proyecto-parrafo-1 div {
+    width: 90%;
+    height: 270px;
+    margin-bottom: 10px; }
+    .proyecto-parrafo-1 div h1 {
+      font-size: 18px;
+      margin: 0px; }
+    .proyecto-parrafo-1 div p {
+      font-size: 12px; }
+  .proyecto-parrafo-1 img {
+    width: 477px;
+    height: 300px; }
+  .proyecto-parrafo-2 div {
+    width: 90%;
+    height: 290px;
+    margin-bottom: 10px; }
+    .proyecto-parrafo-2 div h2 {
+      font-size: 18px;
+      margin: 0px; }
+  .proyecto-parrafo-2 img {
+    width: 477px;
+    height: 300px; }
+  .formulario-conjunto h1 {
+    font-size: 25px; }
+  .formulario-conjunto .formulario-redes {
+    width: 50%; }
+  .unidades-main .unidades-imagenes div {
+    width: 75%; }
+  .whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; }
+    .whatsapp a img {
+      width: 50px; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer h2 {
+      font-size: 20px;
+      text-align: center; }
+    footer div img {
+      width: 40px; } }
+
+@media screen and (max-width: 510px) {
+  .proyecto-parrafo-1 img {
+    width: 420px;
+    height: 250px; }
+  .proyecto-parrafo-2 img {
+    width: 420px;
+    height: 250px; }
+  .unidades-main .unidades-imagenes div p {
+    width: 95%; } }
+
+@media screen and (max-width: 450px) {
+  .hero h1 {
+    font-size: 15px; }
+  .hero p {
+    width: 90%;
+    font-size: 11px; }
+  .conocelo .conocelo-parrafo p {
+    width: 90%;
+    font-size: 12px; }
+  .fotos-propuestas div {
+    width: 70%;
+    height: 350px; }
+    .fotos-propuestas div h3 {
+      font-size: 15px;
+      padding: 8px; }
+    .fotos-propuestas div a {
+      font-size: 10px; }
+  .proyecto-parrafo-1 {
+    height: 550px; }
+    .proyecto-parrafo-1 div p {
+      height: 90px;
+      font-size: 10px; }
+    .proyecto-parrafo-1 img {
+      width: 350px;
+      height: 220px; }
+  .proyecto-parrafo-2 {
+    height: 550px; }
+    .proyecto-parrafo-2 div {
+      height: 280px; }
+      .proyecto-parrafo-2 div p {
+        height: 90px;
+        font-size: 10px; }
+    .proyecto-parrafo-2 img {
+      width: 350px;
+      height: 220px; }
+  .main-galeria {
+    height: 1870px; }
+    .main-galeria .galeria-titulo h1 {
+      font-size: 22px; }
+    .main-galeria .grid-galeria .galeria-fotos {
+      display: grid;
+      grid-template-columns: repeat(1, 320px);
+      grid-template-rows: 190px 190px 190px 190px 190px 190px 190px 190px 190px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; }
+      .main-galeria .grid-galeria .galeria-fotos div {
+        width: 320px;
+        height: 190px; }
+  .main-formulario {
+    height: 900px; }
+    .main-formulario .formulario {
+      gap: 17px; }
+      .main-formulario .formulario .formulario-conjunto {
+        height: 350px; }
+        .main-formulario .formulario .formulario-conjunto h1 {
+          font-size: 19px; }
+        .main-formulario .formulario .formulario-conjunto .formulario-info {
+          font-size: 12px; }
+        .main-formulario .formulario .formulario-conjunto .formulario-redes {
+          width: 70%;
+          height: 60px; }
+  .unidades-main section h1 {
+    font-size: 24px; }
+  .unidades-main .unidades-imagenes div {
+    width: 80%; }
+    .unidades-main .unidades-imagenes div h3 {
+      font-size: 19px; }
+    .unidades-main .unidades-imagenes div p {
+      font-size: 13px; } }
+
+@media screen and (max-width: 390px) {
+  .hero h1 {
+    font-size: 14px; }
+  .hero p {
+    width: 90%;
+    font-size: 11px; }
+  .conocelo-parrafo h2 {
+    font-size: 18px; }
+  .conocelo-parrafo p {
+    font-size: 11px; }
+  .propuestas h2 {
+    font-size: 22px; }
+  .fotos-propuestas div {
+    width: 70%;
+    height: 300px; }
+    .fotos-propuestas div h3 {
+      font-size: 15px;
+      padding: 3px; }
+    .fotos-propuestas div a {
+      font-size: 10px; }
+  .el-barrio .parrafo-barrio h2 {
+    font-size: 18px; }
+  .el-barrio .parrafo-barrio p {
+    width: 90%;
+    height: 80px;
+    font-size: 11px;
+    margin-bottom: 10px; }
+  .mapa {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .mapa iframe {
+      width: 300px;
+      height: 200px;
+      padding: 5px; }
+  .proyecto-parrafo-1 {
+    height: 500px; }
+    .proyecto-parrafo-1 div {
+      width: 100%;
+      height: 300px; }
+      .proyecto-parrafo-1 div p {
+        width: 90%;
+        height: 90px;
+        font-size: 10px; }
+    .proyecto-parrafo-1 img {
+      width: 315px;
+      height: 220px; }
+  .proyecto-parrafo-2 {
+    height: 500px; }
+    .proyecto-parrafo-2 div {
+      width: 100%;
+      height: 300px; }
+      .proyecto-parrafo-2 div p {
+        width: 90%;
+        height: 90px;
+        font-size: 10px; }
+    .proyecto-parrafo-2 img {
+      width: 315px;
+      height: 220px; }
+  .unidades-main .unidades-imagenes div {
+    width: 90%; }
+    .unidades-main .unidades-imagenes div img {
+      width: 85%; }
+    .unidades-main .unidades-imagenes div p {
+      width: 100%; } }

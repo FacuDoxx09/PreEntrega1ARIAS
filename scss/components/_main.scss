@@ -1,0 +1,470 @@
+/*! ----- INDEX ----- */
+header{
+    nav{
+        div{
+            img{
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+                background-color: rgba(255, 255, 255, 0.747);
+                border-radius: 10px;
+            }
+        }
+    }
+}
+.hero{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 7, 12, 0.50)), url(../img/vista-por-fuera.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: nth($colores, 1);
+    @include flex(flex, column, center, center);
+    h1{
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+        color: rgb(255, 255, 255);
+        @include texto2(50px, center);
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        width: 50%;
+        @include texto2(22px, justify);
+        color: nth($colores, 1);
+        background: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 7, 12, 0.50));
+        padding: 10px;
+        border: 2px solid nth($colores, 1);
+        display: inline-block;
+    }
+}
+.conocelo{
+    width: 100%;
+    height: 600px;
+    background-color: $color-fondo-principal;
+    padding: 20px;
+    @include flex(flex, row-reverse, center, center);
+}
+.conocelo-parrafo{
+    width: 100%;
+    height: 400px;
+    padding-left: 30px;
+    padding-right: 30px;
+    @include flex(flex, column, center, center);
+    h2{
+        width: 100%;
+        padding: 5px;
+        @include texto1(30px, italic, center);
+        color: nth($colores, 2);
+    }
+    p{
+        width: 100%;
+        margin: 2px;
+        @include texto2(19px, justify);
+        color: nth($colores, 2);
+        }
+    a{
+        width: 12%;
+        @include flex2(flex, center, center);
+    }
+}
+.abanico{
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+    border: 2px solid nth($colores, 2);
+    display: flex;
+    img{
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+        border: 1px solid nth($colores, 2);
+        :hover{
+            width: 100%;
+            cursor: default;
+            width: 300px;
+            opacity: 1;
+            filter: contrast(120%);
+            border: 2px solid nth($colores, 2);
+        }
+    }
+}
+.propuestas{
+    h2{
+        width: 100%;
+        font-size: 30px;
+        font-style: italic;
+        margin: 0px;
+        color: nth($colores, 2);
+        background-color: $color-fondo-secundario;
+        display: flex;
+        justify-content: center;
+    }
+}
+.fotos-propuestas{
+    width: 100%;
+    padding: 5px;
+    background-color: $color-fondo-secundario;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    div{
+        width: 350px;
+        height: 400px;
+        background-color: #d3c4b2;
+        border: 3px solid nth($colores, 2);
+        margin: 30px;
+        border-radius: 20px;
+        text-align: center;
+        display: inline-block;
+        h3{
+            width: 100%;
+            @include texto2(22px, center);
+            padding: 7px;
+            margin-bottom: 2px;
+        }
+        img{
+            width: 100%;
+            height: 80%;
+            border-radius: 20px 20px 0 0;
+            border-bottom: 3px solid nth($colores, 2);
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+.boton{
+    width: 90px;
+    height: 35px;
+    background-color: #272727;
+    @extend %botones;
+}
+.el-barrio{
+    width: 100%;
+    height: 600px;
+    background-color: $color-fondo-principal;
+    padding: 20px;
+    @include flex2(flex, center, center);
+    .parrafo-barrio{
+        width: 100%;
+        text-align: center;
+        h2{
+            width: 100%;
+            @include texto2(30px, center);
+        }
+        p{
+            width: 70%;
+            height: 70px;
+            @include texto2(19px, justify);
+            display: inline-block;
+        }
+    }
+    .mapa{
+        width: 100%;
+        iframe{
+            width: 100%;
+        }
+    }
+}
+.whatsapp{
+    position: fixed;
+    bottom:  30px;
+    right: 50px;
+    a{
+        img{
+            width: 60px;
+        }
+    }
+}
+
+/*! ----- PROYECTO ----- */
+
+.proyecto-parrafo-1{
+    width: 100%;
+    height: 640px;
+    background-color: $color-fondo-principal;
+    display: flex;
+    padding: 20px;
+    div{
+        width: 50%;
+        background: linear-gradient(rgba(5, 7, 12, 0.336), rgba(5, 7, 12, 0.50));
+        @include flex(flex, column, center, center);
+        h1{
+            width: 100%;
+            @include texto1(30px, italic, center);
+            @include flex2(flex, center, center);
+        }
+        }
+        p{
+            width: 80%;
+            height: 110px;
+            margin: 5px;
+            @include texto2(17px, justify);
+            @include flex2(flex, center, center);
+        }
+    img{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px solid nth($colores, 2);
+        box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+    }
+}
+.proyecto-parrafo-2{
+    width: 100%;
+    height: 640px;
+    background-color: $color-fondo-principal;
+    padding: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    div{
+        background: linear-gradient(rgba(5, 7, 12, 0.336), rgba(5, 7, 12, 0.50));
+        width: 50%;
+        @include flex(flex, column, center, center);
+        p{
+            width: 80%;
+            height: 90px;
+            @include texto2(17px, justify);
+            padding: 10px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            @include flex(flex, column, flex-start, center);
+        }
+    }
+    img{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px solid nth($colores, 2);
+        box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+    }
+}
+
+/*! ----- UNIDADES ----- */
+
+.unidades-main{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-color: $color-fondo-principal;
+    @include flex(flex, column, center, center);
+    section{
+        width: 100%;
+        margin-top: 10px;
+        h1{
+            @include texto2(32px, center);
+            text-decoration: underline;
+        }
+    }
+    .unidades-imagenes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        div{
+            width: 100%;
+            margin: 15px;
+            padding: 25px;
+            border-radius: 30px;
+            background: linear-gradient(rgba(5, 7, 12, 0.336), rgba(5, 7, 12, 0.50));
+            @include flex(flex, column, center, center);
+            h3{
+                font-size: 25px;
+                text-decoration: underline;
+                color: rgba(255, 255, 255, 0.815);
+            }
+            p{
+                width: 90%;
+                text-align: justify;
+                color: rgba(255, 255, 255, 0.815);
+            }
+            img{
+                margin-bottom: 15px;
+                border: solid 3px nth($colores, 2);
+                box-shadow: 14px 14px 20px 0 rgba(10, 10, 10, 0.1);
+            }
+        }
+    }
+}
+
+/*! ----- GALERIA ----- */
+
+.main-galeria{
+    width: 100%;
+    height: 950px;
+    background-color: $color-fondo-principal;
+    .galeria-titulo{
+        width: 100%;
+        height: 60px;
+        @include flex2(flex, center, center);
+        h1{
+            font-size: 25px;
+            font-style: italic;
+        }
+    }
+    .grid-galeria{
+        width: 100%;
+        height: 890px;
+        @include flex2(flex, center, center);
+        .galeria-fotos{
+            width: 80%;
+            height: 890px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 270px 270px 270px;
+            gap: 20px;
+            div{
+                display: flex;
+                justify-content: center;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border: 3px solid nth($colores, 2);
+                    object-fit: cover;
+                }
+                h3{
+                    width: 100%;
+                    font-size: 19px;
+                    color: nth($colores, 1);
+                    background-color: #00000079;
+                    padding: 7px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+
+/*! ----- CONTACTO ----- */
+
+.main-formulario{
+    width: 100%;
+    height: calc(100vh - 240px);
+    background: linear-gradient(rgba(0, 0, 0, 0.404),rgba(0,0, 0, 0.404)),url(../img/vista-superior.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @include flex(flex, column, center, center);
+    .formulario{
+        display:grid;
+        grid-template-columns: repeat(2,50%);
+        padding:20px;
+        gap:10px;
+        width: 1000px;
+        .formulario-conjunto{
+            color: nth($colores, 1);
+            display:flex;
+            flex-direction: column;
+            gap:50px;
+            h1{
+                text-align: left;
+                font-size: 30px;    
+            }
+            .formulario-info{
+                display: flex;
+                flex-direction: column;
+                gap:25px;
+                p{
+                    font-size: 1rem;
+                    img{
+                        width: 30px;
+                        padding: 2px;
+                        margin-right: 10px;
+                        font-size:25px;
+                        border-radius: 5px;
+                        background: linear-gradient(rgba(255, 255, 255, 0.349), rgba(237, 238, 238, 0.5));
+                    }
+                }
+            }
+            .formulario-redes{
+                width: 35%;
+                height: 50px;
+                border-radius: 5px;
+                background: linear-gradient(rgba(255, 255, 255, 0.349), rgba(237, 238, 238, 0.5));
+                @include flex2(flex, space-around, center);
+                a{
+                    text-decoration: none;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    transition: .1s;
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+        .formulario-casillas{
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            gap:15px;
+            button{
+                width: 100%;
+                padding: 10px;
+                outline: none;
+                background: #272727de;
+                color: nth($colores, 1);
+                border:none;
+                transition: .1s;
+                cursor: pointer;
+                font-size: 1rem;
+            }
+            .casilla{
+                position:relative;
+                input{
+                    width: 100%;
+                    height: 40px;
+                    padding: 0 10px;
+                    outline:none;
+                    background: rgba(255, 255, 255, 0.384);
+                    border:3px solid transparent;
+                    letter-spacing: 1px;
+                    transition:.3s;
+                    color:nth($colores, 2);
+                    &placeholder{
+                        color:nth($colores, 2);
+                    }
+                    &focus{
+                        border-bottom:3px solid nth($colores, 1);
+                        &palceholder{
+                            color:transparent;
+                        }
+                    }
+                }
+                textarea{
+                    width: 100%;
+                    height: 130px;
+                    padding: 10px;
+                    background: rgba(255, 255, 255, 0.384);
+                    border:3px solid transparent;
+                    letter-spacing: 1px;
+                    outline: none;
+                    transition:.3s;
+                    color:nth($colores, 2);
+                    letter-spacing: 1.5px;
+                    &placeholder{
+                        color:nth($colores, 2);
+                    }
+                    &focus{
+                        border-bottom:3px solid nth($colores, 1);
+                        &placeholder{
+                            color:transparent;
+                        }
+                    }
+                }
+                img{
+                    width: 25px;
+                    position:absolute;
+                    top:50%;
+                    transform: translateY(-50%);
+                    right: 10px;
+                    color:rgba(255, 255, 255, 0.336);
+                    transition: .3s;
+                }
+            }
+        }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+$color-fondo-principal: #d3c4b2f3;
+$color-fondo-secundario: #7c7a76bd;
+
+$colores: white, black;
+$font: 50px, 30px, 25px, 22px, 20px, 18px, 13px, 12px, 11px, 10px;
+
+@mixin flex($flex, $direction, $justify, $align){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex2($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin texto1($size, $style, $align){
+    font-size: $size;
+    font-style: $style;
+    text-align: $align;
+}
+
+@mixin texto2($size, $align){
+    font-size: $size;
+    text-align: $align;
+}
+
+%botones{
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 7px;
+}

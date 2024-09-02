@@ -359,7 +359,7 @@ footer div img{
     align-items: center;
 }
 
-.proyecto-parrafo-2 p{
+.proyecto-parrafo-2 div p{
     width: 80%;
     height: 90px;
     font-size: 17px;
@@ -490,6 +490,7 @@ footer div img{
 .galeria-fotos div{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .galeria-fotos div img{
@@ -499,11 +500,7 @@ footer div img{
     object-fit: cover;
 }
 
-.grid-item{
-    position: relative;
-}
-
-.grid-item h3{
+.galeria-fotos div h3{
     width: 100%;
     font-size: 19px;
     color: white;
@@ -555,7 +552,7 @@ footer div img{
 .formulario-info{
     display: flex;
     flex-direction: column;
-    gap:25px
+    gap:25px;
 }
 
 .formulario-info p{
@@ -669,9 +666,6 @@ footer div img{
     transition: .3s;
 }
 
-.casilla > input:focus ~ i {
-    color:crimson;
-}
 
 /*! --------- MAIN --------- */
 
@@ -851,7 +845,7 @@ footer div img{
         align-items: center;
         gap: 10px;
     }
-    .grid-item{
+    .galeria-fotos div{
         width: 350px;
         height: 220px;
     }
@@ -1019,7 +1013,7 @@ footer div img{
         width: 90%;
         font-size: 15px;
     }
-    .conocelo h2{
+    .conocelo-parrafo h2{
         font-size: 20px;
     }
     .conocelo-parrafo p{
@@ -1057,7 +1051,7 @@ footer div img{
         align-items: center;
         gap: 10px;
     }
-    .grid-item{
+    .galeria-fotos div{
         width: 350px;
         height: 220px;
     }
@@ -1074,7 +1068,7 @@ footer div img{
         width: 90%;
         font-size: 12px;
     }
-    .conocelo p{
+    .conocelo-parrafo p{
         font-size: 13px;
     }
     .proyecto-parrafo-1 div{
@@ -1106,7 +1100,7 @@ footer div img{
         width: 90%;
         font-size: 11px;
     }
-    .conocelo p{
+    .conocelo-parrafo p{
         width: 100%;
     }
     .parrafo-barrio p{
@@ -1119,9 +1113,6 @@ footer div img{
         position: fixed;
         bottom:  20px;
         right: 20px;
-        }
-    .whatsapp a img{
-        width: 40px;
         }
     footer{
         display: flex;
@@ -1226,7 +1217,7 @@ footer div img{
         align-items: center;
         gap: 10px;
     }
-    .grid-item{
+    .galeria-fotos div{
         width: 320px;
         height: 190px;
     }
@@ -1274,10 +1265,10 @@ footer div img{
         width: 90%;
         font-size: 11px;
     }
-    .conocelo h2{
+    .conocelo-parrafo h2{
         font-size: 18px;
     }
-    .conocelo p{
+    .conocelo-parrafo p{
         font-size: 11px;
     }
     .whatsapp{
