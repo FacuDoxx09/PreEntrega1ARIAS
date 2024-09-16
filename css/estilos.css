@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 .boton {
   text-decoration: none;
+  font-size: 14px;
   color: white;
-  border-radius: 10px;
-  padding: 7px; }
+  padding: 6px;
+  border-radius: 10px; }
 
 /*! --- RESET ---*/
 * {
@@ -108,7 +109,7 @@ header nav div img {
     opacity: .8;
     transition: .5s ease;
     border: 1px solid black; }
-    .abanico img :hover {
+    .abanico img:hover {
       width: 100%;
       cursor: default;
       width: 300px;
@@ -141,7 +142,10 @@ header nav div img {
     margin: 30px;
     border-radius: 20px;
     text-align: center;
-    display: inline-block; }
+    display: inline-block;
+    transition: 1s; }
+    .fotos-propuestas div:hover {
+      transform: scale(1.05); }
     .fotos-propuestas div h3 {
       width: 100%;
       font-size: 22px;
@@ -268,7 +272,6 @@ header nav div img {
 /*! ----- UNIDADES ----- */
 .unidades-main {
   width: 100%;
-  height: calc(100vh - 120px);
   background-color: #d3c4b2f3;
   display: flex;
   flex-direction: column;
@@ -338,7 +341,10 @@ header nav div img {
       .main-galeria .grid-galeria .galeria-fotos div {
         display: flex;
         justify-content: center;
-        position: relative; }
+        position: relative;
+        transition: 1s; }
+        .main-galeria .grid-galeria .galeria-fotos div:hover {
+          transform: scale(1.05); }
         .main-galeria .grid-galeria .galeria-fotos div img {
           width: 100%;
           height: 100%;
@@ -407,64 +413,56 @@ header nav div img {
           transition: .1s; }
           .main-formulario .formulario .formulario-conjunto .formulario-redes a img {
             width: 40px; }
-      .main-formulario .formulario .formulario-conjunto .formulario-casillas {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 15px; }
-        .main-formulario .formulario .formulario-conjunto .formulario-casillas button {
+    .main-formulario .formulario .formulario-casillas {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 15px; }
+      .main-formulario .formulario .formulario-casillas .casilla {
+        position: relative; }
+        .main-formulario .formulario .formulario-casillas .casilla input {
           width: 100%;
-          padding: 10px;
+          height: 40px;
+          padding: 0 10px;
           outline: none;
-          background: #272727de;
-          color: white;
-          border: none;
-          transition: .1s;
-          cursor: pointer;
-          font-size: 1rem; }
-        .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla {
-          position: relative; }
-          .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla input {
-            width: 100%;
-            height: 40px;
-            padding: 0 10px;
-            outline: none;
-            background: rgba(255, 255, 255, 0.384);
-            border: 3px solid transparent;
-            letter-spacing: 1px;
-            transition: .3s;
-            color: black; }
-            .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla inputplaceholder {
-              color: black; }
-            .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla inputfocus {
-              border-bottom: 3px solid white; }
-              .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla inputfocuspalceholder {
-                color: transparent; }
-          .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla textarea {
-            width: 100%;
-            height: 130px;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.384);
-            border: 3px solid transparent;
-            letter-spacing: 1px;
-            outline: none;
-            transition: .3s;
-            color: black;
-            letter-spacing: 1.5px; }
-            .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla textareaplaceholder {
-              color: black; }
-            .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla textareafocus {
-              border-bottom: 3px solid white; }
-              .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla textareafocusplaceholder {
-                color: transparent; }
-          .main-formulario .formulario .formulario-conjunto .formulario-casillas .casilla img {
-            width: 25px;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 10px;
-            color: rgba(255, 255, 255, 0.336);
-            transition: .3s; }
+          background: rgba(255, 255, 255, 0.616);
+          border: 3px solid transparent;
+          letter-spacing: 1px;
+          transition: .3s;
+          color: black; }
+          .main-formulario .formulario .formulario-casillas .casilla input::placeholder {
+            color: #000000; }
+        .main-formulario .formulario .formulario-casillas .casilla textarea {
+          width: 100%;
+          height: 130px;
+          padding: 10px;
+          background: rgba(255, 255, 255, 0.616);
+          border: 3px solid transparent;
+          letter-spacing: 1px;
+          outline: none;
+          transition: .3s;
+          color: black;
+          letter-spacing: 1.5px; }
+          .main-formulario .formulario .formulario-casillas .casilla textarea::placeholder {
+            color: #000000; }
+        .main-formulario .formulario .formulario-casillas .casilla img {
+          width: 25px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 10px;
+          color: rgba(255, 255, 255, 0.336);
+          transition: .3s; }
+      .main-formulario .formulario .formulario-casillas button {
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        background: #272727ee;
+        color: white;
+        border: none;
+        transition: .1s;
+        cursor: pointer;
+        font-size: 1rem; }
 
 footer {
   width: 100%;
@@ -538,7 +536,9 @@ footer {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 270px 270px 270px 270px 270px;
       gap: 20px;
-      justify-items: center; } }
+      justify-items: center; }
+  .boton {
+    font-size: 12px; } }
 
 @media screen and (max-width: 1575px) {
   .conocelo-parrafo a {
@@ -700,22 +700,20 @@ footer {
     width: 100%; }
     .main-galeria .grid-galeria .galeria-fotos {
       width: 90%; }
-  .unidades-main {
-    height: 2100px; }
-    .unidades-main .unidades-imagenes {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .unidades-main .unidades-imagenes div {
-        width: 50%; }
-        .unidades-main .unidades-imagenes div h3 {
-          font-size: 22px; }
-        .unidades-main .unidades-imagenes div img {
-          width: 60%; }
-        .unidades-main .unidades-imagenes div p {
-          width: 90%;
-          font-size: 14px; } }
+  .unidades-main .unidades-imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .unidades-main .unidades-imagenes div {
+      width: 50%; }
+      .unidades-main .unidades-imagenes div h3 {
+        font-size: 22px; }
+      .unidades-main .unidades-imagenes div img {
+        width: 60%; }
+      .unidades-main .unidades-imagenes div p {
+        width: 90%;
+        font-size: 14px; } }
 
 @media screen and (max-width: 900px) {
   .conocelo-parrafo p {
@@ -820,7 +818,11 @@ footer {
 
 @media screen and (max-width: 582px) {
   .proyecto-parrafo-2 div p {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .main-formulario .formulario .formulario-conjunto .formulario-info p {
+    font-size: 14px; }
+  .main-formulario .formulario .formulario-conjunto .formulario-redes {
+    width: 50%; } }
 
 @media screen and (max-width: 570px) {
   .hero h1 {
@@ -967,10 +969,13 @@ footer {
   .hero p {
     width: 90%;
     font-size: 11px; }
-  .conocelo-parrafo h2 {
-    font-size: 18px; }
-  .conocelo-parrafo p {
-    font-size: 11px; }
+  .conocelo {
+    padding: 5px; }
+    .conocelo .conocelo-parrafo h2 {
+      font-size: 16px;
+      margin-bottom: 2px; }
+    .conocelo .conocelo-parrafo p {
+      font-size: 11px; }
   .propuestas h2 {
     font-size: 22px; }
   .fotos-propuestas div {
@@ -1025,6 +1030,8 @@ footer {
   .unidades-main .unidades-imagenes div {
     width: 90%; }
     .unidades-main .unidades-imagenes div img {
-      width: 85%; }
+      width: 80%; }
     .unidades-main .unidades-imagenes div p {
-      width: 100%; } }
+      width: 100%; }
+  .main-formulario .formulario {
+    width: 90%; } }

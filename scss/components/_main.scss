@@ -82,7 +82,7 @@ header{
         opacity: .8;
         transition: .5s ease;
         border: 1px solid nth($colores, 2);
-        :hover{
+        &:hover{
             width: 100%;
             cursor: default;
             width: 300px;
@@ -120,6 +120,10 @@ header{
         border-radius: 20px;
         text-align: center;
         display: inline-block;
+        transition: 1s;
+                &:hover{
+                    transform: scale(1.05);
+                }
         h3{
             width: 100%;
             @include texto2(22px, center);
@@ -247,7 +251,6 @@ header{
 
 .unidades-main{
     width: 100%;
-    height: calc(100vh - 120px);
     background-color: $color-fondo-principal;
     @include flex(flex, column, center, center);
     section{
@@ -257,7 +260,7 @@ header{
             @include texto2(32px, center);
             text-decoration: underline;
         }
-    }
+    }   
     .unidades-imagenes{
         display: flex;
         flex-direction: row;
@@ -318,6 +321,10 @@ header{
                 display: flex;
                 justify-content: center;
                 position: relative;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.05);
+                }
                 img{
                     width: 100%;
                     height: 100%;
@@ -395,22 +402,12 @@ header{
                     }
                 }
             }
+        }
         .formulario-casillas{
             display:flex;
             flex-direction: column;
             text-align: center;
             gap:15px;
-            button{
-                width: 100%;
-                padding: 10px;
-                outline: none;
-                background: #272727de;
-                color: nth($colores, 1);
-                border:none;
-                transition: .1s;
-                cursor: pointer;
-                font-size: 1rem;
-            }
             .casilla{
                 position:relative;
                 input{
@@ -418,40 +415,28 @@ header{
                     height: 40px;
                     padding: 0 10px;
                     outline:none;
-                    background: rgba(255, 255, 255, 0.384);
+                    background: rgba(255, 255, 255, 0.616);
                     border:3px solid transparent;
                     letter-spacing: 1px;
                     transition:.3s;
                     color:nth($colores, 2);
-                    &placeholder{
-                        color:nth($colores, 2);
-                    }
-                    &focus{
-                        border-bottom:3px solid nth($colores, 1);
-                        &palceholder{
-                            color:transparent;
-                        }
+                    &::placeholder{
+                        color: #000000;
                     }
                 }
                 textarea{
                     width: 100%;
                     height: 130px;
                     padding: 10px;
-                    background: rgba(255, 255, 255, 0.384);
+                    background: rgba(255, 255, 255, 0.616);
                     border:3px solid transparent;
                     letter-spacing: 1px;
                     outline: none;
                     transition:.3s;
                     color:nth($colores, 2);
                     letter-spacing: 1.5px;
-                    &placeholder{
-                        color:nth($colores, 2);
-                    }
-                    &focus{
-                        border-bottom:3px solid nth($colores, 1);
-                        &placeholder{
-                            color:transparent;
-                        }
+                    &::placeholder{
+                        color: #000000;
                     }
                 }
                 img{
@@ -464,7 +449,17 @@ header{
                     transition: .3s;
                 }
             }
-        }
+            button{
+                width: 100%;
+                padding: 10px;
+                outline: none;
+                background: #272727ee;
+                color: nth($colores, 1);
+                border:none;
+                transition: .1s;
+                cursor: pointer;
+                font-size: 1rem;
+            }
         }
     }
 }

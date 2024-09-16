@@ -627,15 +627,21 @@ footer div img{
 
 .casilla img{
     width: 25px;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
 }
 
-.casilla> input::placeholder,
+.casilla > input::placeholder,
 .casilla > textarea::placeholder{
     color:#000000;
 }
 
-.casillas > input:focus::placeholder,
-.casillas > textarea:focus::placeholder {
+.casilla > input:focus::placeholder,
+.casilla > textarea:focus::placeholder {
     color:transparent;
 }
 
@@ -657,14 +663,6 @@ footer div img{
     letter-spacing: 1.5px;
 }
 
-.casilla img{
-    position:absolute;
-    top:50%;
-    transform: translateY(-50%);
-    right: 10px;
-    color:rgba(255 255 255 / .3);
-    transition: .3s;
-}
 
 
 /*! --------- MAIN --------- */
